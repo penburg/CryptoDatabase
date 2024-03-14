@@ -10,9 +10,9 @@ October 2023 TaxBit shutdown there consumer crypto tax reporting operations. I w
 NONE
 
 ## Prerequisites
-MariaDB compatible SQL server
-(optional) CSV Export from CoinTracker
-(optional) CSV Export(s) from stake.tax
+MariaDB compatible SQL server <br />
+(optional) CSV Export from CoinTracker <br />
+(optional) CSV Export(s) from stake.tax <br />
 (optional) CSV 8949 from taxbit for previous years 
 
 ## Installation
@@ -33,7 +33,7 @@ php importStakeTax.php <pathToExported.csv>
 ### Import from taxbit 8949
 IRS 8949 reports transactions by the DAY while our imported transactions are acuate to the second. So manual adding, adjusting, swapping may be needed. 
 
-php importOLD8949.php <pathTo8949.csv>
+php importOLD8949.php <pathTo8949.csv> <br />
 php update8949Links.php
 
 ### Verify 8949 transactions
